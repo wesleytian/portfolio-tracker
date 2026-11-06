@@ -28,7 +28,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12 space-y-8">
     <header>
       <div class="flex items-center justify-between text-sm">
-        <a href="/" class="text-teal-700 hover:underline">← Contacts</a>
+        <span></span>
         <a id="demo-link" class="text-neutral-400 hover:text-neutral-700"></a>
       </div>
       <h1 class="text-4xl font-semibold tracking-tight mt-2">Private investments</h1>
@@ -84,7 +84,7 @@
   <script>
     const $ = (id) => document.getElementById(id);
 
-    // ---------- demo mode (/portfolio?demo=1) ----------
+    // ---------- demo mode (/?demo=1) ----------
     // For public screenshots. Everything comes from the made-up data below and the server is
     // never called, so none of the real portfolio can show up. Edits live only in this tab.
     const DEMO = new URLSearchParams(location.search).has("demo");
@@ -798,7 +798,7 @@
       drawGroupedList($("forward"), "forward_to", "kind", FORWARD_KINDS, forward, v => { forward = v; drawForward(); });
     }
 
-    $("demo-link").href = DEMO ? "/portfolio" : "/portfolio?demo=1";
+    $("demo-link").href = DEMO ? "/" : "/?demo=1";
     $("demo-link").textContent = DEMO ? "Exit demo" : "Demo";
     if (DEMO) $("csv-btn").remove();
     $("demo-link").title = DEMO ? "Back to your real data" : "Sample data for screenshots. Nothing real is loaded.";

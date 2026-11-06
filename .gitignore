@@ -2,7 +2,7 @@
 .env
 .env.*
 
-# Personal data: the real contacts/portfolio DB, its WAL/SHM sidecars, ad-hoc
+# Personal data: the real portfolio DB (and the demo DB), WAL/SHM sidecars, ad-hoc
 # .bak copies, daily backups, and any exported CSVs. Never commit these.
 *.db
 *.db-wal
@@ -13,7 +13,7 @@
 *.csv
 backups/
 
-# Private one-off scripts that reference real people (kept locally only)
+# Private notes/scripts that reference real companies or people (kept locally only)
 private/
 
 # Cached public-market prices
