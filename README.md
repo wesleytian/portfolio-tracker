@@ -21,11 +21,20 @@ backups, the price cache, CSV exports and `.env`. The server also writes one bac
 
 From the fake demo dataset (see [Demo with fake data](#demo-with-fake-data)).
 
-Totals, yearly pacing and the public-market comparison:
-![Private investments](docs/screenshots/portfolio.png)
+Totals and yearly pacing against a budget:
+![Overview](docs/screenshots/overview.jpg)
+
+The same dollars, on the same dates, in a public index:
+![vs. public markets](docs/screenshots/vs-public-markets.jpg)
 
 Investments table:
-![Investments](docs/screenshots/investments.png)
+![Investments](docs/screenshots/investments.jpg)
+
+Valuation lookups: proposed marks with sources, applied only once accepted:
+![Valuation lookups](docs/screenshots/valuation-lookups.jpg)
+
+Pipeline of people and companies to watch:
+![Pipeline](docs/screenshots/pipeline.jpg)
 
 ## Setup
 
